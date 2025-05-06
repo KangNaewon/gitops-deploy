@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fastapi-todo
+spec:
+  template:
+    metadata:
+      labels:
+        version: blue
+    spec:
+      containers:
+      - name: fastapi
+        image: your-image:blue
+
