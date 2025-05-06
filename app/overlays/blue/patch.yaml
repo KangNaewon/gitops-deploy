@@ -10,5 +10,5 @@ spec:
     spec:
       containers:
       - name: fastapi
-        image: knw125/fastapi-app:v19
+        image: knw125/fastapi-app:v20
 
