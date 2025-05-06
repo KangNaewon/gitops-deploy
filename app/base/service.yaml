@@ -9,5 +9,7 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 8000
-  type: ClusterIP
+      nodePort: 30080   # (옵션) 포트 명시적으로 설정
+  type: NodePort
+
 
