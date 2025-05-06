@@ -9,7 +9,7 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 8000
-      nodePort: 8010   # (옵션) 포트 명시적으로 설정
+      nodePort: 30080   # (옵션) 포트 명시적으로 설정
   type: NodePort
 
 
