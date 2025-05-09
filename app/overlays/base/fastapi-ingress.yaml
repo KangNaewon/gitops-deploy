@@ -7,13 +7,12 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-    - host: fastapi.local   # 도메인 없이 쓸 거면 생략 가능
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: fastapi-todo
-                port:
-                  number: 80
+  - http:
+      paths:
+      - path: /fastapi
+        pathType: Prefix
+        backend:
+          service:
+            name: fastapi-todo
+            port:
+              number: 80
